@@ -35,5 +35,8 @@ export default defineConfig({
   ],
   define: {
     PACKAGE_VERSION: JSON.stringify(process.env.npm_package_version)
+  },
+  build: {
+    chunkSizeWarningLimit: 2600,
   }
 })
